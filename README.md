@@ -20,7 +20,7 @@ docker compose up -d
 **2. Importe a estrutura do banco:**
 
 ```bash
-docker exec -i todo_mysql mysql -uroot -p'password@123' < database.sql
+docker exec -i todo_mysql mysql -uroot -p'sua-senha' < database.sql
 ```
 
 **3. Configure o `.env`:**
