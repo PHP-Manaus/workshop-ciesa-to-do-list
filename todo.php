@@ -65,9 +65,9 @@ $feitas    = $total - $pendentes;
 
     <h1>📋 To-Do List</h1>
     <p class="stats">
-        <span><?= $pendentes ?></span> pendente(s) &middot;
-        <span><?= $feitas ?></span> concluída(s) &middot;
-        <span><?= $total ?></span> total
+        <span><?= $pendentes ?? '' ?></span> pendente(s) &middot;
+        <span><?= $feitas ?? '' ?></span> concluída(s) &middot;
+        <span><?= $total ?? '' ?></span> total
     </p>
 
     <form class="nova" method="POST" action="todo.php">
